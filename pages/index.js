@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import PostLists from '../Components/PostLists';
 import Sidebar from '../Components/Sidebar';
 import Header from '../Components/Header';
+import {NEXT_URL} from "../url"
 
 
 export default function Home({product}) {
@@ -29,7 +30,7 @@ export default function Home({product}) {
   )
 }
 export async function  getServerSideProps () {
-  const res = await axios.get("http://localhost:3000/api/post")
+  const res = await axios.get(NEXT_URL + "/api/post")
   console.log(res.data);
   return {
     props: {
