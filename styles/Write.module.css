@@ -1,0 +1,69 @@
+.write{
+    padding: 50px;
+    margin-left: 50px;
+}
+.writeimg{
+    width: 70vw;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.writeformgroup{
+    display: flex;  
+    width: 100%;
+
+}
+.writeform{
+    position: relative;
+}
+.writetext{
+    margin-left: 10px;
+    border-style: none;
+    width: 70vw;
+    font-size: 20px;
+}
+.writetext:focus{
+    outline: none;
+}
+.writeicon{
+    margin-right: 20px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.writetextinput{
+    margin-left: 10px;
+    border-style: none;
+    width: 70vw;
+    font-size: 20px;
+}
+.writetextinput:focus{
+    outline: none;
+
+}
+.writestory{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70vw;
+    height: 100vh;
+    border-style: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.writestory:focus{
+    outline: none;
+
+}
+.writebtn{
+    position: absolute;
+    right: 100px;
+    top:20px;
+    background-color: teal;
+    color: white;
+    border-style: none;
+    width: 70px;
+    height: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}

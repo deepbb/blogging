@@ -1,0 +1,48 @@
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    /* background:url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"); */
+    background-size: cover;
+}
+.regloginform{
+    display: flex;
+    flex-direction:column;
+}
+.regloginform > label {
+    font-size: 18px;
+    align-self: center;
+}
+.regloginform > input {
+    border:none;
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.regloginform >input:focus {
+    outline: none;
+}
+.regbtn , .regbtn{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+.reglogbtn{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
