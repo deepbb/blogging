@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import styles from "../styles/Register.module.css"
+import {NEXT_URL} from "../url"
 
 function Register() {
     const [username,setusername] = useState("")
@@ -17,7 +18,7 @@ function Register() {
             alert("passwords doesn't match!")
         } else {
             try {
-                const res = await axios.post("http://localhost:3000/api/auth/register",{username,email,password})
+                const res = await axios.post(NEXT_URL + "/api/auth/register",{username,email,password})
                  console.log(res);
             } catch (err) {
                 setError(true)

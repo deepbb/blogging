@@ -3,6 +3,7 @@ import Image from "next/image"
 import styles from "../styles/Write.module.css"
 import Link from "next/link"
 import { useState } from "react"
+import { NEXT_URL } from "../url"
 
 function Write() {
     const [title,setTitle] = useState("")
@@ -25,7 +26,7 @@ function Write() {
                     photo: url,
                   };
 
-                const res = await axios.post ("http://localhost:3000/api//post/" , newPost)
+                const res = await axios.post (NEXT_URL + "/api//post/" , newPost)
                 console.log(res);
                 window.location.replace("/")
      } catch (err) {

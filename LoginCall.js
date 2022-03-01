@@ -1,11 +1,12 @@
 import axios from "axios";
 import { LoginStart, LoginSuccess, LoginFailure } from "./Context/AuthActions";
+import {NEXT_URL} from "./url"
 
 
 export const LoginCall = async (usercredentials, dispatch) => {
   dispatch(LoginStart());
   try {
-    const res = await axios.post("http://localhost:3000/api/auth/login",usercredentials);
+    const res = await axios.post(NEXT_URL + "/api/auth/login",usercredentials);
     console.log(res);
     dispatch(LoginSuccess(res.data));
   } catch (err) {

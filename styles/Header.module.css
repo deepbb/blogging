@@ -4,6 +4,14 @@
     justify-content: center;
     align-items: center;
 }
+.headerimg{
+    display: flex;
+}
+.imgblock{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
 .title{
     color: crimson;
     text-align: center;

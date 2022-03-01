@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import {useState} from "react"
 import styles from "../../styles/Singlepost.module.css"
+import {NEXT_URL} from "../../url"
 
 
 function Post({postCart}) {
@@ -64,7 +65,7 @@ function Post({postCart}) {
 
 export async function  getServerSideProps ({params}) {
     //const id = params.id
-    const res = await axios.get(`http://localhost:3000/api/post/${params.id}`)
+    const res = await axios.get(NEXT_URL + `/api/post/${params.id}`)
     console.log(res.data);
     return {
       props: {
